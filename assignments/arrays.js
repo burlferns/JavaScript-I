@@ -73,6 +73,8 @@ let inventory = [
 // console.log(evens);
 // [12, 14]
 
+console.log("******************************THIS IS THE MVP OUTPUT OF ARRAYS.JS**********");
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 //console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
@@ -124,3 +126,21 @@ for(let i=0; i<inventory.length;i++) {
 }
 console.log(JSON.stringify(BMWAndAudi));
 
+
+console.log("******************************THIS IS THE STRETCH OUTPUT OF ARRAYS.JS**********");
+console.log("****array challenge 3 - stretch****");
+let carModels_stretch = inventory.map(x=>x.car_model);
+let carModelsSorted_stretch = carModels_stretch.sort();
+console.log(carModelsSorted_stretch);
+
+console.log("****array challenge 4 - stretch****");
+let carYears_stretch = inventory.map(x=>x.car_year);
+console.log(carYears_stretch);
+
+console.log("****array challenge 5 - stretch****");
+let oldCars_stretch = inventory.filter(x=>x.car_year<2000);
+console.log(`The number of cars older than the year 2000 are ${oldCars_stretch.length}`);
+
+console.log("****array challenge 6 - stretch****");
+let BMWAndAudi_stretch = inventory.filter(x=>x.car_make==="BMW" || x.car_make==="Audi");
+console.log(JSON.stringify(BMWAndAudi_stretch));

@@ -1,5 +1,7 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
+console.log("******************************THIS IS THE MVP OUTPUT OF FUNCTION-CONVERSION.JS**********");
+
 // let myFunction = function () {
 // console.log("Function was invoked!");
 // };
@@ -41,8 +43,13 @@ console.log(subtract(1,2));
 
 // Stretch
 
+console.log("******************************THIS IS THE STRETCH OUTPUT OF FUNCTION-CONVERSION.JS**********");
+
 // exampleArray = [1,2,3,4];
 // const triple = exampleArray.map(function (num) {
 //   return num * 3;
 // });
 // console.log(triple);
+exampleArray = [1,2,3,4];
+const triple = exampleArray.map(num=>num * 3);
+console.log(triple);
