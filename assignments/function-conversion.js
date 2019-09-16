@@ -6,18 +6,14 @@ console.log("******************************THIS IS THE MVP OUTPUT OF FUNCTION-CO
 // console.log("Function was invoked!");
 // };
 // myFunction();
-let myFunction = () => {
-    console.log("Function was invoked!");
-};
+let myFunction = () => console.log("Function was invoked!");
 myFunction();
 
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
-let anotherFunction = (param) => {
-    return param;
-};
+let anotherFunction = (param) => param;
 anotherFunction("Example");
 console.log(anotherFunction("Example"));
 
@@ -25,9 +21,7 @@ console.log(anotherFunction("Example"));
 //   return param1 + param2;
 // };
 // add(1,2);
-let add = (param1, param2) => {
-    return param1 + param2;
- };
+let add = (param1, param2) => param1 + param2;
  add(1,2);
  console.log(add(1,2));
 
@@ -35,9 +29,7 @@ let add = (param1, param2) => {
 //   return param1 - param2;
 // };
 // subtract(1,2);
-let subtract = (param1, param2) => {
-   return param1 - param2;
-};
+let subtract = (param1, param2) => param1 - param2;
 subtract(1,2);
 console.log(subtract(1,2));
 
